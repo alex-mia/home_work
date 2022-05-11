@@ -3,12 +3,12 @@ import 'home_work.dart';
 final Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
 
 
-void Uppers(text){
+void uppers(text){
     print(text.contains(new RegExp(r'[A-ZА-Я]')));
   }
 
 
-void Uppercase(text){
+void uppercase(text){
   int y = 0;
   for(int i=0; i<text.length; i++) {
     var string = text[i];
@@ -20,12 +20,12 @@ void Uppercase(text){
   }
 
 
-void CapsAll(text){
+void capsAll(text){
   var newtext = '${text.toUpperCase()}';
   print(newtext);
 }
 
-void LowerAll(text){
+void lowerAll(text){
   var newtext = '${text.toLowerCase()}';
   print(newtext);
 }

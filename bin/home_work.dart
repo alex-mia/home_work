@@ -8,7 +8,7 @@ void main(){
 
 String? menu() {
   stdout.write("Введите вашу строку: ");
-  final myString = stdin.readLineSync();
+  final String? myString = stdin.readLineSync();
   print('Выберете номер операции: ');
   stdout.write("""
   1 - проверить на заглавные буквы 
@@ -21,27 +21,27 @@ String? menu() {
   String? task = stdin.readLineSync();
   while (task != '6') {
     if (task == '1') {
-      Uppers(myString);
+      uppers(myString);
       stdout.write("введите номер здачи: ");
       task = stdin.readLineSync();
     };
     if (task == '2') {
-      Uppercase(myString);
+      uppercase(myString);
       stdout.write("введите номер задачи: ");
       task = stdin.readLineSync();
     };
     if (task == '3') {
-      CapsAll(myString);
+      capsAll(myString);
       stdout.write("введите номер задачи: ");
       task = stdin.readLineSync();
     };
     if (task == '4') {
-      LowerAll(myString);
+      lowerAll(myString);
       stdout.write("введите номер задачи: ");
       task = stdin.readLineSync();
     };
     if (task == '5') {
-      Palindrom(myString);
+      palindrom(myString!);
       stdout.write("введите номер задачи: ");
       task = stdin.readLineSync();
     }

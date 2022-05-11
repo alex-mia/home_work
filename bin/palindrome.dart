@@ -1,5 +1,5 @@
 
-void Palindrom(text) {
+void palindrom(String text) {
   String name = text;
   List<int> chars = name.runes.toList();
   print(checkpallindrom(chars));
