@@ -1,4 +1,4 @@
-import 'home_work.dart';
+import 'main.dart';
 
 final Upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
 
