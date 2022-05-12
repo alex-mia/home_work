@@ -12,7 +12,7 @@ void hash_map() {
   int number = 1;
   dynamic exits;
   var hashy = new HashMap<int, num>();
-  while (exits != 'Y') {
+  while (exits != 'N') {
       stdout.write("введите число Y: ");
       dynamic y_str = stdin.readLineSync();
       int y = int.parse('$y_str');
@@ -27,9 +27,9 @@ void hash_map() {
       hashy[number] = z;
       number += 1;
       print(hashy);
-      stdout.write("Продолжить или выйти?: Y/N ");
+      stdout.write("Продолжить?: Y/N ");
       var exits = stdin.readLineSync();
-      if( exits == 'Y' || exits == 'y'){
+      if( exits == 'N' || exits == 'n'){
         break;
       }
   }
