@@ -8,19 +8,19 @@ void main() {
 }
 
 void hash_map() {
-  print('x^2(y - 8)/5 - (2x + 5)/y = z');
+  print('вычислить выражение:  x^2(y - 8)/5 - (2x + 5)/y = z');
   int number = 1;
   dynamic exits;
   var hashy = new HashMap<int, num>();
-  while (exits != '6') {
+  while (exits != 'Y') {
       stdout.write("введите число Y: ");
-      var y_str = stdin.readLineSync();
+      dynamic y_str = stdin.readLineSync();
       int y = int.parse('$y_str');
       assert(y is int);
 
       stdout.write("введите число X: ");
-      var x_str = stdin.readLineSync();
-      var x = int.parse('$x_str');
+      dynamic x_str = stdin.readLineSync();
+      int x = int.parse('$x_str');
       assert(x is int);
 
       num z = (x^2) * (y - 8) / 5 - (2 * x + 5)/y;
@@ -29,7 +29,7 @@ void hash_map() {
       print(hashy);
       stdout.write("Продолжить или выйти?: Y/N ");
       var exits = stdin.readLineSync();
-      if( exits == 'N' || exits == 'n'){
+      if( exits == 'Y' || exits == 'y'){
         break;
       }
   }
